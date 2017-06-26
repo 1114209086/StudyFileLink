@@ -4,13 +4,19 @@
 3.  Esc 退出编辑模式 （编辑模式下 ）
 4.  ：wq 保存关闭 （非编辑模式下 ）
 ### GIT
-git init
-git status
-git  reset	         撤消   
-git stash 	         隐藏本地的改动
-git  pull --rebase 	         拉最新的代码，忽略本地改动
-git stash pop	         本地改动显示出来
-ll -la	         显示隐藏文件
-git diff file	                    查看文件的改动
-git clone -b [branchname] [url]	         clone code
-git log -p [filename]
+echo "# test" >> README.md  
+git init  
+git add README.md  （git add . 添加所有改动/ git add --update）
+git commit -m "first commit"  
+git remote add origin git@github.com:1114209086/test.git  
+git push -u origin master  
+git status  
+git stash 	                             隐藏本地的改动  
+git  pull --rebase 	                     拉最新的代码，忽略本地改动  
+git stash pop	                           本地改动显示出来  
+ll -la	                                 显示隐藏文件  
+git diff file	                           查看文件的改动  
+git clone -b [branchname] [url]	         clone code  
+git log -p [filename]                    查看文件的log     
+git checkout [filename]                  check out 文件的改动        
+git reset [filename]                     reset commit 的代码
