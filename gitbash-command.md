@@ -17,6 +17,9 @@ git stash pop	                           本地改动显示出来
 ll -la	                                 显示隐藏文件  
 git diff file	                           查看文件的改动  
 git clone -b [branchname] [url]	         clone code  
-git log -p [filename]                    查看文件的log     
-git checkout [filename]                  check out 文件的改动        
-git reset [filename]                     reset commit 的代码
+git log -p [filename]                    查看文件的log  
+git checkout [filename]                  check out 文件的改动  
+git reset [filename]                     reset commit 的代码  
+### Other
+$ ssh-keygen -t rsa                    生成ssh key
+
