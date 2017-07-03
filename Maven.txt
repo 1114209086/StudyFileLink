@@ -1,0 +1,11 @@
+1.Maven有一个标准的目录结构。如果你在项目中遵循Maven的目录结构，就无需在pom文件中指定源代码、测试代码等目录。
+- src
+  - main
+    - java
+    - resources
+    - webapp
+  - test
+    - java
+    - resources
+
+- target
