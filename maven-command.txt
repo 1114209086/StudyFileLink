@@ -12,3 +12,4 @@ mvnjetty:run 启动jetty服务
 mvntomcat:run 启动tomcat服务
 mvn clean package -Dmaven.test.skip=true 清除以前的包后重新打包，跳过测试类
 mvn --encrypt-master-password <youpassword> 加密你的密码，用于settings.xml
+mvn help:effective-pom 查看最终有效的pom
