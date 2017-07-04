@@ -20,6 +20,7 @@ git clone -b [branchname] [url]	         clone code
 git log -p [filename]                    查看文件的log  
 git checkout [filename]                  check out 文件的改动  
 git reset [filename]                     reset commit 的代码  
+git reset HEAD~1                         push 冲突，多一次提交，回退
 ### Other
 $ ssh-keygen -t rsa                    生成ssh key
 
