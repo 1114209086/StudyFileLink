@@ -6,8 +6,9 @@
 ### GIT
 echo "# test" >> README.md  
 git init  
-git add README.md  （git add . 添加所有改动/ git add --update）
-git commit -m "first commit"  
+git add README.md  （git add . 添加所有改动/ git add --update)  
+git add -p filename   一个更改多处的文件部份添加  
+git commit -m "first commit"  
 git remote add origin git@github.com:1114209086/test.git  
 git push -u origin master  
 git status  
