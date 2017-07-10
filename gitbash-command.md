@@ -21,8 +21,8 @@ git log -p [filename]                    查看文件的log
 git checkout [filename]                  check out 文件的改动  
 git reset [filename]                     reset commit 的代码  
 git reset HEAD~1                         push 冲突，多一次提交，回退  
-git diff --cached / $ git diff --staged                        add 之后查看改动  
+git diff --cached / git diff --staged                        add 之后查看改动  
 touch .gitignore                         生成gitignore
 ### Other
-$ ssh-keygen -t rsa                    生成ssh key
+ssh-keygen -t rsa                    生成ssh key
 
