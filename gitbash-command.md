@@ -20,7 +20,8 @@ git diff file	                           查看文件的改动
 git clone -b [branchname] [url]	         clone code  
 git log -p [filename]                    查看文件的log  
 git log --pretty=oneline                 一行查看log  
-git log --author="Bill"                  查看Bill的log  
+git log --author="Bill"                  查看Bill的log  
+git log -g --grep="message"              查看提交Message包含message的log  
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'" git config --global --unset alias.[name] checkout name eg. lg
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cd) %C(yellow)%an%Creset %s'"  
 git checkout [filename]                  check out 文件的改动  
