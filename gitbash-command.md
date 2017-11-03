@@ -30,7 +30,10 @@ git reset HEAD~1                         push 冲突，多一次提�
 git diff --cached / git diff --staged                        add 之后查看改动  
 git rev-list --all --count               统计提交次数  
 git blame -L 12,22 [filename]            查看某个文件12-22行的改动  
-touch .gitignore                         生成gitignore
+touch .gitignore                         生成gitignore  
+git push origin --delete develop         删除remot  
+git branch -d develop                    删除本地  
+
 ### Other
 ssh-keygen -t rsa                    生成ssh key
 
