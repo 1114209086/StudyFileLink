@@ -22,8 +22,10 @@ git log -p [filename]                    查看文件的log
 git log --pretty=oneline                 一行查看log  
 git log --author="Bill"                  查看Bill的log  
 git log -g --grep="message"              查看提交Message包含message的log  
-grep -o '\w*pin\w*' test.txt             查看test.txt是否包含pin, -o标志将只打印行中的匹配字，而不是整行  
-grep -o '[^[:blank:]]*pin[^[:blank:]]*' test.txt  
+git log --all --grep ='Build 0051'       要搜索提交日志（跨越所有分支机构）给定的文本  
+git grep 'Build 0051' $(git rev-list --all) 根据提交的内容搜索提交记录  
+grep -o '\w*pin\w*' test.txt             查看test.txt是否包含pin, -o标志将只打印行中的匹配字，而不是整行  
+grep -o '[^[:blank:]]*pin[^[:blank:]]*' test.txt  
 grep -o '\S*pin\S*' test.txt  
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'" git config --global --unset alias.[name] checkout name eg. lg  
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cd) %C(yellow)%an%Creset %s'"  
