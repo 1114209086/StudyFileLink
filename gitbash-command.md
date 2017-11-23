@@ -27,7 +27,8 @@ git grep 'Build 0051' $(git rev-list --all) 根据提交的内容搜索提交记
 grep -o '\w*pin\w*' test.txt             查看test.txt是否包含pin, -o标志将只打印行中的匹配字，而不是整行  
 grep -o '[^[:blank:]]*pin[^[:blank:]]*' test.txt  
 grep -o '\S*pin\S*' test.txt  
-git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'" git config --global --unset alias.[name] checkout name eg. lg  
+git rev-list --ancestry-path 7b4a07a..ecf5891         查看两个commit之间的commit  
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'" git config --global --unset alias.[name] checkout name eg. lg  
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cd) %C(yellow)%an%Creset %s'"  
 git checkout [filename]                  check out 文件的改动  
 git reset [filename]                     reset commit 的代码  
