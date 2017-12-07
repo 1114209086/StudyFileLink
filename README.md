@@ -2,7 +2,8 @@
 [Ant指南](http://www.cnblogs.com/hoojo/archive/2013/06/14/java_ant_project_target_task_run.html)  
 [Markdown语法](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 [Markdown语法](https://segmentfault.com/markdown)
-
+http://www.cnblogs.com/lyhabc/p/3691555.html
+http://blog.csdn.net/evankaka/article/details/45580845
 ###一个ant的 build.xml
 ```xml
 <?xml version="1.0"?>
